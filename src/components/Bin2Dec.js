@@ -83,14 +83,13 @@ function Bin2Dec() {
           type="number"
           maxLength={8}
           value={binary}
-          errorBorderColor={inputError ? "crimson" : null}
           placeholder="enter Binary number"
           onChange={onChangeHandler}
         />
         <Box p={2}>
           <VStack>
             <Text>{(!inputError && decimal) ? decimal : null}</Text>
-            <Button onClick={clickHandler}>Convert to Decimal</Button>
+            <Button colorScheme="blue" onClick={clickHandler}>Convert to Decimal</Button>
             <Button
               onClick={() => {
                 setDecimal(0);
