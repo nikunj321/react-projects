@@ -1,16 +1,18 @@
-import React from 'react';
-import {Box} from '@chakra-ui/react';
+import React from "react";
+import { Box } from "@chakra-ui/react";
 
-function Light(props) {
-    return (
-        <Box
-            width="100px"
-            height="100px"
-            backgroundColor="#FFF"
-            boxShadow={props.on ? "0 0 50px 35px #0ff" : "none"}
-            borderRadius="50%"
-        />
-    )
+function Light({ on }) {
+  return (
+    <Box
+      width="50px"
+      height="50px"
+      backgroundColor={on ? "#FFF" : "#000"}
+      boxShadow={on ? "0 0 20px 15px #0ff" : "none"}
+      borderRadius="50%"
+      marginRight="10px"
+      marginLeft="10px"
+    />
+  );
 }
 
-export default Light
+export default Light;
