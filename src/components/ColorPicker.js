@@ -24,6 +24,7 @@ function ColorPicker({ setNewLight, newLight }) {
 
   return (
     <React.Fragment>
+      <Box>
       <Box display="flex" flexDirection="column" alignItems="center" p={4}>
         <Box
           width="200px"
@@ -37,6 +38,7 @@ function ColorPicker({ setNewLight, newLight }) {
         <ColorSlider lineColor="#F00" onChange={(value) => setRed(value)} />
         <ColorSlider lineColor="#0F0" onChange={(value) => setGreen(value)} />
         <ColorSlider lineColor="#00F" onChange={(value) => setBlue(value)} />
+      </Box>
       </Box>
     </React.Fragment>
   );
